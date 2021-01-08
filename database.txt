@@ -1,0 +1,8 @@
+CREATE DATABASE IMDB_DATA;
+psql IMDB_DATA
+CREATE TABLE data_input
+(id INT UNIQUE , TEXT VARCHAR , date_input TIMESTAMP);
+CREATE TABLE data_labeling
+(text_id INT UNIQUE , lable_number INT , lable_date TIMESTAMP UNIQUE);
+CREATE TABLE label_types
+(lable_id INT UNIQUE , lable_name VARCHAR, comments VARCHAR );
